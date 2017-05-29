@@ -1,0 +1,119 @@
+html, body {
+  background-color: #ccc;
+  height: 100%;
+}
+
+#root {
+    height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.everything {
+  display: inline-block;
+  border: 3px outset;
+  cursor: default;
+}
+
+.board, .header {
+  border: 3px inset;
+  margin: 1em;
+}
+
+.remaining, .elapsed {
+  font-family: monospace;
+  font-size: 2em;
+  width: 1.5em;
+}
+
+.remaining {
+  float: left;
+}
+
+.elapsed {
+  float: right;
+}
+
+.header {
+  padding: 1em;
+  text-align: center;
+}
+
+.status {
+  font-size: 1.3em;
+  display: inline-block;
+  border: 3px outset;
+  width: 1.3em;
+  height: 1.3em;
+  line-height: 1.5em;
+}
+
+.cell {
+  width: 1.5em;
+  height: 1.5em;
+  float: left;
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: bold;
+  user-select: none;
+  background-color: #bbb;
+}
+
+.cell.lossSquare {
+  background-color: red;
+}
+
+.cell.one {
+  color: blue;
+}
+
+.cell.two {
+  color: green;
+}
+
+.cell.three {
+  color: red;
+}
+
+.cell.four {
+  color: darkblue;
+}
+
+.cell.five {
+  color: darkred;
+}
+
+.cell.six {
+  color: lightgreen;
+}
+
+.cell.seven {
+  color: black;
+}
+
+.cell.eight {
+  color: yellow;
+}
+
+.cellInner {
+  width: 100%;
+  height: 100%;
+}
+
+.cellBorder {
+  border: 1px solid #aaa;
+}
+
+.cell.hidden {
+  background-color: #ccc;
+}
+
+.cell.hidden .cellBorder {
+  border: 1px outset;
+}
+
+.row {
+  clear: both;
+}
